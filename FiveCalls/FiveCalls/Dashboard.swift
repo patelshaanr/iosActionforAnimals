@@ -35,8 +35,8 @@ struct Dashboard: View {
                     shownNewsletterSignup = true
                 } onSubmit: { email in
                     var district = store.state.district
-#if !DEBUG
-                    var req = URLRequest(url: URL(string: "https://buttondown.com/api/emails/embed-subscribe/5calls")!)
+#if DEBUG
+                    var req = URLRequest(url: URL(string: "https://us-central1-calls-a1b43.cloudfunctions.net/api/subscribe")!)
                     req.httpMethod = "POST"
                     req.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
                     var reqBody = "email=\(email)&tag=ios"
@@ -135,7 +135,7 @@ struct MenuView: View {
             Image(systemName: "gear")
                 .renderingMode(.template)
                 .font(.title)
-                .tint(Color.fivecallsDarkBlue)
+                .tint(Color.fiveCallsDarkGreenText)
                 .accessibilityLabel(Text(R.string.localizable.menuName))
         }
         .sheet(isPresented: $showRemindersSheet) {

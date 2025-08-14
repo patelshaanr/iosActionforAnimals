@@ -100,7 +100,7 @@ struct IssueContactDetail: View {
                             } label: {
                                 Image(systemName: "ellipsis.circle")
                                     .font(.title2)
-                                    .foregroundColor(Color.fivecallsDarkBlue)
+                                    .foregroundColor(Color.fiveCallsDarkGreenText)
                                     .padding(.leading, 4)
                             }
                             .accessibilityIdentifier("localNumbers")

@@ -81,7 +81,7 @@ struct NewsletterSignup: View {
                 )
             }.padding(.top, 6)
         }.padding()
-        .background(.fivecallsDarkBlue)
+        .background(.fiveCallsDarkGreenText)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .padding()
     }

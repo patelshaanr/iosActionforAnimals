@@ -75,7 +75,7 @@ struct ScheduleReminders: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden()
             .toolbarBackground(.visible)
-            .toolbarBackground(Color.fivecallsDarkBlue)
+            .toolbarBackground(Color.fiveCallsDarkGreenText)
             .toolbarColorScheme(.dark, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -169,7 +169,7 @@ struct DayAndTimePickers: View {
             VStack(spacing: 0) {
                 Text(R.string.localizable.scheduledRemindersTimeLabel())
                     .font(.title3)
-                    .foregroundColor(Color.fivecallsDarkBlue)
+                    .foregroundColor(Color.fiveCallsDarkGreenText)
                     .multilineTextAlignment(.center)
                     .padding(20)
                 DatePicker("", selection: $selectedTime, displayedComponents: .hourAndMinute)
@@ -180,7 +180,7 @@ struct DayAndTimePickers: View {
                 Spacer()
                 Text(R.string.localizable.scheduledRemindersDayLabel())
                     .font(.title3)
-                    .foregroundColor(Color.fivecallsDarkBlue)
+                    .foregroundColor(Color.fiveCallsDarkGreenText)
                     .padding(.horizontal, 20)
                     .accessibilityAddTraits(.isHeader)
                 MultipleDayPicker(selectedDayIndices: $selectedDayIndices)

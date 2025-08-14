@@ -148,7 +148,7 @@ struct AboutSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden()
             .toolbarBackground(.visible)
-            .toolbarBackground(Color.fivecallsDarkBlue)
+            .toolbarBackground(Color.fiveCallsDarkGreenText)
             .toolbarColorScheme(.dark, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -164,7 +164,7 @@ struct AboutSheet: View {
                     .navigationTitle(webViewContent.navigationTitle)
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbarBackground(.visible)
-                    .toolbarBackground(Color.fivecallsDarkBlue)
+                    .toolbarBackground(Color.fiveCallsDarkGreenText)
                     .toolbarColorScheme(.dark, for: .navigationBar)
             }
 

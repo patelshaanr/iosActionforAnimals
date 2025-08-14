@@ -28,13 +28,17 @@ class FetchContactsOperation: BaseOperation, @unchecked Sendable {
         }
     }
     
-    var url: URL {
-        var components = URLComponents(string: "https://api.5calls.org/v1/reps")
+    /*var url: URL {
+        var components = URLComponents(string: "https://us-central1-calls-a1b43.cloudfunctions.net/api/getContactsByZip/")
         let locationQueryParam = URLQueryItem(name: "location", value: location.locationValue)
         components?.queryItems = [locationQueryParam]
         return components!.url!
+    } */
+    var url: URL {
+        let baseURLString = "https://us-central1-calls-a1b43.cloudfunctions.net/api/getContactsByZip"
+        let fullURLString = "\(baseURLString)/\(location.locationValue)"
+        return URL(string: fullURLString)!
     }
-    
     override func execute() {
         let request = buildRequest(forURL: url)
         
