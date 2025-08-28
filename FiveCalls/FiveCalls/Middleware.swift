@@ -148,7 +148,6 @@ private func fetchContacts(location: UserLocation, dispatch: @escaping Dispatche
     }
     queue.addOperation(operation)
 }
-
 private func fetchMessages(state: AppState, dispatch: @escaping Dispatcher) {
     guard let district = state.district else {
         return

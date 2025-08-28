@@ -36,7 +36,7 @@ struct IssueDetail: View {
                     .padding(.bottom, 8)
                 Text(issue.markdownIssueReason)
                     .padding(.bottom, 16)
-                    .accentColor(.fivecallsDarkBlueText)
+                    .accentColor(.fivecallsGreen)
                 if store.state.location != nil {
                     Text(R.string.localizable.repsListHeader())
                         .font(.caption)

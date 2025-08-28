@@ -58,7 +58,7 @@ struct IssueContactDetail: View {
                         Text(currentContact.phone)
                             .font(.title)
                             .fontWeight(.semibold)
-                            .foregroundColor(Color.fivecallsDarkBlueText)
+                            .foregroundColor(Color.fivecallsGreen)
                             .onTapGesture {
                                 self.call(phoneNumber: currentContact.phone)
                             }

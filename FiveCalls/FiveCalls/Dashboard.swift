@@ -125,9 +125,9 @@ struct MenuView: View {
             Button { showRemindersSheet.toggle() } label: {
                 Text(R.string.localizable.menuScheduledReminders())
             }
-            Button { showYourImpact.toggle() } label: {
+            /*Button { showYourImpact.toggle() } label: {
                 Text(R.string.localizable.menuYourImpact())
-            }
+            } */
             Button { showAboutSheet.toggle() } label: {
                 Text(R.string.localizable.menuAbout())
             }
@@ -141,9 +141,11 @@ struct MenuView: View {
         .sheet(isPresented: $showRemindersSheet) {
             ScheduleReminders()
         }
+        /*
         .sheet(isPresented: $showYourImpact) {
             YourImpact()
         }
+         */
         .sheet(isPresented: $showAboutSheet) {
             AboutSheet()
         }
@@ -257,7 +259,7 @@ struct IssuesList: View {
                                     R.string.localizable.moreIssuesTitle())
                                 .font(.title3)
                                 .fontWeight(.semibold)
-                                .foregroundColor(Color.fivecallsDarkBlueText)
+                                .foregroundColor(Color.fivecallsGreen)
 
                         }
                         .padding(.vertical, 10)

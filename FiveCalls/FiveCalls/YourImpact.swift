@@ -1,4 +1,4 @@
-//
+/*
 //  YourImpact.swift
 //  FiveCalls
 //
@@ -101,7 +101,7 @@ struct YourImpact: View {
         }
         .accentColor(.white)
     }
-        
+
     private func fetchUserStats() {
         let userStatsOp = FetchUserStatsOperation()
         userStatsOp.completionBlock = {
@@ -146,3 +146,4 @@ struct ImpactListItem: View {
         return R.string.localizable.calledMultiple(count)
     }
 }
+*/

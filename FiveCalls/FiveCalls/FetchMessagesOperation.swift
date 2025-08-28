@@ -1,4 +1,4 @@
-//
+
 //  FetchMessagesOperation.swift
 //  FiveCalls
 //
@@ -25,7 +25,7 @@ class FetchMessagesOperation: BaseOperation, @unchecked Sendable {
     }
     
     var url: URL {
-        var components = URLComponents(string: "https://api.5calls.org/v1/users/inbox")
+        var components = URLComponents(string: "https://us-central1-calls-a1b43.cloudfunctions.net/api/reportCall")
         let districtQueryParam = URLQueryItem(name: "district", value: district)
         components?.queryItems = [districtQueryParam]
         return components!.url!
@@ -74,3 +74,4 @@ class FetchMessagesOperation: BaseOperation, @unchecked Sendable {
         var messages: [InboxMessage]
     }
 }
+

@@ -1,4 +1,4 @@
-//
+
 //  FetchUserStatsOperation.swift
 //  FiveCalls
 //
@@ -20,7 +20,7 @@ class FetchUserStatsOperation: BaseOperation, @unchecked Sendable {
     private var retryCount = 0
     
     var url: URL {
-        return URL(string: "https://api.5calls.org/v1/users/stats")!
+        return URL(string: "https://us-central1-calls-a1b43.cloudfunctions.net/api/reportCall")!
     }
     
     override func execute() {
