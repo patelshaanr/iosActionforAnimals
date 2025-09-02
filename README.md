@@ -13,11 +13,7 @@ Action for Animals is an iOS app that empowers users to participate in animal ad
 - Xcode 16  
 - iOS 16 or later  
 
-## Getting Started
-Install dependencies:
 
-```bash
-bundle install
 
 
 
